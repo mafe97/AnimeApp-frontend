@@ -14,7 +14,9 @@ export const useFetchImgs = ( category ) => {
   }
 
   useEffect( () => {
+
     getImages();
+    
   }, []);
 
     return {
