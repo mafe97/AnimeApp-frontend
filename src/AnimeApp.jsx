@@ -11,7 +11,6 @@ const onAddCategory = (newCategory) => {
 
     if ( categories.map(category => category.toLowerCase()).includes(lowerCaseCat)) return;
     
-    // if ( categories.includes(newCategory)) return;
     setCategories([ newCategory, ...categories ] )
 };
 
@@ -22,17 +21,13 @@ const onAddCategory = (newCategory) => {
       <AddCategory 
           onNewCategory={ (value) => onAddCategory(value) }
       />
-      {/* images carousel */}
         {
             categories.map( ( category ) => (
                 <ImgGrid 
                     key={ category } 
                     category={ category } />
             ))
-        }
-
-      {/* item image */}
-      
+        }      
     </>
   )
 }
