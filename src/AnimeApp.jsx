@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AddCategory, ImgGrid } from './components';
+import { AddCategory, ImgGrid, MessageApi } from './components';
 
 export const AnimeApp = () => {
 
@@ -25,9 +25,12 @@ const onAddCategory = (newCategory) => {
             categories.map( ( category ) => (
                 <ImgGrid 
                     key={ category } 
-                    category={ category } />
+                    category={ category }    
+                />
             ))
-        }      
+        }  
+
+        <MessageApi />    
     </>
   )
 }

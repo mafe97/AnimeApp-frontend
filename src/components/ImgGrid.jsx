@@ -6,10 +6,7 @@ import { useFetchImgs } from "../hooks/useFetchImgs";
 
 export const ImgGrid = ({ category }) => {
   
-  // informacion del API
   const { images, isLoading } = useFetchImgs ( category );
-
-  console.log( isLoading)
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -31,7 +28,7 @@ export const ImgGrid = ({ category }) => {
             images.map( ( image ) => (
                 <ImgItem 
                     key={ image.id }
-                    {...image} //esparcir propreties
+                    {...image}
                 />
             ))
           }
