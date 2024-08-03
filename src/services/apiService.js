@@ -6,7 +6,7 @@ const API_URL = AprUrl;
 
 export const getMessages = async () => {
     try {
-        const response = await axios.get(`${API_URL}/score`);
+        const response = await axios.get(`${API_URL}`);
         return response.data;
     } catch (error) {
         console.error('Error fetching messages:', error);
@@ -16,7 +16,7 @@ export const getMessages = async () => {
 
 export const saveMessage = async (content) => {
     try {
-        const response = await axios.post(`${API_URL}/score`, { content });
+        const response = await axios.post(`${API_URL}`, { content });
         return response.data;
     } catch (error) {
         console.error('Error saving message:', error);
