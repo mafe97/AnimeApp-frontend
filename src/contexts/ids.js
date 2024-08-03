@@ -2,6 +2,7 @@
 // --------------------- URLS --------------------- //
 // ------------------------------------------------ //
 
-// API
+// API local
 export const ApiUrl = 'https://api.jikan.moe';
-export const URL = 'https://marketplace.kids4kids.uk/';
+// API production
+export const AprUrl = 'https://api.jikan.moe/v4/anime';
