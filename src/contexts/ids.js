@@ -3,6 +3,6 @@
 // ------------------------------------------------ //
 
 // API local
-export const ApiUrl = 'https://api.jikan.moe';
+export const ApiUrl = 'https://34.236.248.124';
 // API production
-export const AprUrl = 'https://api.jikan.moe/v4/anime';
+export const AprUrl = 'https://34.236.248.124/v4/anime';
