@@ -27,7 +27,7 @@ export const MessageApi = () => {
 
         isLoading,
         <div>
-            <p>This Anime is { message }</p>
+            <p>This Anime is: { message }</p>
       </div>
     );
 }
