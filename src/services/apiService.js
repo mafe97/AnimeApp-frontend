@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-import { AprUrl } from '../contexts/ids';
+import { ApiUrl } from '../contexts/ids';
 
-const API_URL = AprUrl;
+const API_URL = ApiUrl;
 
 export const getMessages = async () => {
     try {
-        const response = await axios.get(`${API_URL}`);
+        const response = await axios.get(`${API_URL}/anime`);
         return response.data;
     } catch (error) {
         console.error('Error fetching messages:', error);
